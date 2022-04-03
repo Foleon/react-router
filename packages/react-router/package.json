@@ -1,6 +1,6 @@
 {
   "name": "@foleon/react-router",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "author": "Remix Software <hello@remix.run>",
   "description": "Declarative routing for React",
   "repository": {
