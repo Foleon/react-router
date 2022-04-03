@@ -1,3 +1,17 @@
+# Note
+This router is a quick fix to supports a "." basename. But therefor doesn't allow deepnested pathnames.
+Supported:
+```
+ - "/name"
+ - "/path?with=query"
+ - "/path?with=query#andHash"
+```
+Not supported
+```
+ - "/name/another-dir"
+ - "/trailing-slash/"
+```
+
 # Welcome to React Router &middot; [![npm package][npm-badge]][npm] [![build][build-badge]][build]
 
 [npm-badge]: https://img.shields.io/npm/v/react-router-dom.svg?style=flat-square
