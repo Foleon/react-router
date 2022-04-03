@@ -491,7 +491,7 @@ createServer((req, res) => {
 
 // React Router v6
 // note the import path from react-router-dom/server!
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "@foleon/react-router-dom/server";
 
 createServer((req, res) => {
   let markup = ReactDOMServer.renderToString(

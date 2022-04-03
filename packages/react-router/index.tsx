@@ -1362,6 +1362,7 @@ function getToPathname(to: To): string | undefined {
 
 function stripBasename(pathname: string, basename: string): string | null {
   if (basename === "/") return pathname;
+  if (basename === ".") return pathname;
 
   if (!pathname.toLowerCase().startsWith(basename.toLowerCase())) {
     return null;
@@ -1379,7 +1380,10 @@ function stripBasename(pathname: string, basename: string): string | null {
 const joinPaths = (paths: string[]): string =>
   paths.join("/").replace(/\/\/+/g, "/");
 
-const normalizePathname = (pathname: string): string => pathname;
+const normalizePathname = (pathname: string): string => {
+  if (pathname === '.') return pathname;
+  return pathname.replace(/\/+$/, "").replace(/^\/*/, "/")
+};
 
 const normalizeSearch = (search: string): string =>
   !search || search === "?"

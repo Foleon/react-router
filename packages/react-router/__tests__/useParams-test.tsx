@@ -1,6 +1,12 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Outlet, Routes, Route, useParams } from "@foleon/react-router";
+import {
+  MemoryRouter,
+  Outlet,
+  Routes,
+  Route,
+  useParams,
+} from "@foleon/react-router";
 
 function ShowParams() {
   return <pre>{JSON.stringify(useParams())}</pre>;
@@ -62,7 +68,7 @@ describe("useParams", () => {
 
       expect(renderer.toJSON()).toMatchInlineSnapshot(`
         <pre>
-          {"slug":"@foleon/react-router"}
+          {"slug":"react-router"}
         </pre>
       `);
     });
@@ -99,7 +105,7 @@ describe("useParams", () => {
               User Dashboard
             </h1>
             <pre>
-              {"username":"mjackson","course":"@foleon/react-router"}
+              {"username":"mjackson","course":"react-router"}
             </pre>
           </div>
         `);
@@ -204,7 +210,7 @@ describe("useParams", () => {
 
       expect(renderer.toJSON()).toMatchInlineSnapshot(`
         <pre>
-          {"slug":"@foleon/react-router"}
+          {"slug":"react-router"}
         </pre>
       `);
     });

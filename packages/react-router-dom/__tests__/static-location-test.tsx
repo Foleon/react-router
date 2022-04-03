@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOMServer from "react-dom/server";
 import { Routes, Route, useLocation } from "@foleon/react-router-dom";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "@foleon/react-router-dom/server";
 
 describe("A <StaticRouter>", () => {
   describe("with a string location prop", () => {
