@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "@foleon/react-router",
   "scripts": {
     "build": "rollup -c && tsc -b",
     "clean": "git clean -fdX .",
