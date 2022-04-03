@@ -34,6 +34,22 @@ describe("<Link> href", () => {
       expect(renderer.root.findByType("a").props.href).toEqual("/inbox");
     });
 
+    test('<Link to="/inbox2"> creates relative href if basename = .', () => {
+      let renderer: TestRenderer.ReactTestRenderer;
+      TestRenderer.act(() => {
+        renderer = TestRenderer.create(
+          <MemoryRouter initialEntries={["/inbox"]} basename=".">
+            <Routes>
+              <Route path="inbox" element={<Link to="/inbox2" />} />
+              <Route path="inbox2" element={<Link to="." />} />
+            </Routes>
+          </MemoryRouter>
+        );
+      });
+
+      expect(renderer.root.findByType("a").props.href).toEqual("./inbox2");
+    });
+
     test('<Link to=".."> resolves relative to the parent route', () => {
       let renderer: TestRenderer.ReactTestRenderer;
       TestRenderer.act(() => {
