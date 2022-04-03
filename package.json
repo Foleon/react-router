@@ -91,5 +91,6 @@
     "build/node_modules/react-router-dom/umd/react-router-dom.production.min.js": {
       "none": "8 kB"
     }
-  }
+  },
+  "version": "6.3.0"
 }
