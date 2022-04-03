@@ -1,5 +1,5 @@
 {
-  "name": "react-router-native",
+  "name": "@foleon/react-router-native",
   "version": "6.2.2",
   "author": "Remix Software <hello@remix.run>",
   "description": "Declarative routing for React Native applications",

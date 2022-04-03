@@ -1,5 +1,5 @@
 {
-  "name": "react-router-dom",
+  "name": "@foleon/react-router-dom",
   "version": "6.2.2",
   "author": "Remix Software <hello@remix.run>",
   "description": "Declarative routing for React web applications",
