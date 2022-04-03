@@ -127,13 +127,13 @@ async function run() {
     if (answer === false) return 0;
 
     // 3. Update react-router version
-    await updatePackageConfig("@foleon/react-router", (config) => {
+    await updatePackageConfig("react-router", (config) => {
       config.version = version;
     });
     console.log(chalk.green(`  Updated react-router to version ${version}`));
 
     // 4. Update react-router-dom version + react-router dep
-    await updatePackageConfig("@foleon/react-router-dom", (config) => {
+    await updatePackageConfig("react-router-dom", (config) => {
       config.version = version;
       config.dependencies["@foleon/react-router"] = version;
     });
@@ -142,7 +142,7 @@ async function run() {
     );
 
     // 5. Update react-router-native version + react-router dep
-    await updatePackageConfig("@foleon/react-router-native", (config) => {
+    await updatePackageConfig("react-router-native", (config) => {
       config.version = version;
       config.dependencies["@foleon/react-router"] = version;
     });
