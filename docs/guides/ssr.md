@@ -71,7 +71,7 @@ And finally, you'll need a similar file to "hydrate" the app with your JavaScrip
 
 ```js filename=client.entry.js
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 import App from "./App";
 
 ReactDOM.hydrate(

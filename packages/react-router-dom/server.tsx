@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Action, Location, To, createPath, parsePath } from "history";
-import { Router } from "react-router-dom";
+import { Router } from "@foleon/react-router-dom";
 
 export interface StaticRouterProps {
   basename?: string;

@@ -18,11 +18,11 @@ export default defineConfig({
   resolve: process.env.USE_SOURCE
     ? {
         alias: {
-          "react-router": path.resolve(
+          "@foleon/react-router": path.resolve(
             __dirname,
             "../../packages/react-router/index.tsx"
           ),
-          "react-router-dom": path.resolve(
+          "@foleon/react-router-dom": path.resolve(
             __dirname,
             "../../packages/react-router-dom/index.tsx"
           ),

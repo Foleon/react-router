@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { act } from "react-dom/test-utils";
-import { MemoryRouter, Routes, Route, Link } from "react-router-dom";
+import { MemoryRouter, Routes, Route, Link } from "@foleon/react-router-dom";
 
 function click(anchor: HTMLAnchorElement, eventInit?: MouseEventInit) {
   let event = new MouseEvent("click", {

@@ -7,7 +7,7 @@ import {
   Route,
   useNavigate,
   useParams,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 describe("navigate with params", () => {
   let node: HTMLDivElement;

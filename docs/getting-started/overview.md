@@ -25,7 +25,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 // import your route components too
 
 render(
@@ -59,7 +59,7 @@ But `teams/new` is a more specific match than `/teams/:teamId`, so `<NewTeamForm
 Use `Link` to let the user change the URL or `useNavigate` to do it yourself (like after form submissions):
 
 ```tsx
-import { Link } from "react-router-dom";
+import { Link } from "@foleon/react-router-dom";
 
 function Home() {
   return (
@@ -75,7 +75,7 @@ function Home() {
 ```
 
 ```tsx
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@foleon/react-router-dom";
 
 function Invoices() {
   let navigate = useNavigate();
@@ -99,7 +99,7 @@ function Invoices() {
 Use `:style` syntax in your route path and `useParams()` to read them:
 
 ```tsx
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route, useParams } from "@foleon/react-router-dom";
 
 function App() {
   return (
@@ -184,7 +184,7 @@ When the URL is `"/invoices/123"`, the component tree will:
 Notice the inner component that changed with the URL (`<SentInvoices>` and `<Invoice>`). The parent route (`<Invoices>`) is responsible for making sure the matching child route is rendered with [`<Outlet>`](../api.md#outlet). Here's the full example:
 
 ```tsx [18]
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet } from "@foleon/react-router-dom";
 
 function App() {
   return (
@@ -226,7 +226,7 @@ import {
   Route,
   Link,
   Outlet,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 function App() {
   return (
@@ -340,7 +340,7 @@ import {
   Route,
   Link,
   Outlet,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 function Home() {
   return <h1>Home</h1>;

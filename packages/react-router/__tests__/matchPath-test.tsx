@@ -1,4 +1,4 @@
-import { matchPath } from "react-router";
+import { matchPath } from "@foleon/react-router";
 
 describe("matchPath", () => {
   it("matches the root / URL", () => {

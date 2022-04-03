@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import type { RouteObject } from "react-router";
+import type { RouteObject } from "@foleon/react-router";
 import {
   MemoryRouter,
   Outlet,
@@ -8,7 +8,7 @@ import {
   Route,
   useParams,
   useRoutes,
-} from "react-router";
+} from "@foleon/react-router";
 
 describe("route matching", () => {
   function describeRouteMatching(routes: React.ReactNode) {

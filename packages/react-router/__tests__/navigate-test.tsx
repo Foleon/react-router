@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Navigate, Routes, Route } from "react-router";
+import { MemoryRouter, Navigate, Routes, Route } from "@foleon/react-router";
 
 describe("<Navigate>", () => {
   describe("with an absolute href", () => {

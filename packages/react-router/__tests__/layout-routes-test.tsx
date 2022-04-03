@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Routes, Route, Outlet } from "react-router";
+import { MemoryRouter, Routes, Route, Outlet } from "@foleon/react-router";
 
 describe("A layout route", () => {
   it("does not match when none of its children do", () => {

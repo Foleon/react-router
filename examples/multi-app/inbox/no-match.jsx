@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@foleon/react-router-dom";
 
 function NoMatch() {
   return (

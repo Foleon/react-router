@@ -7,7 +7,7 @@ import {
   useLocation,
   Navigate,
   Outlet,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import { fakeAuthProvider } from "./auth";
 
 export default function App() {

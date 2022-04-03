@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as JSURL from "jsurl";
-import type { NavigateOptions } from "react-router-dom";
-import { Routes, Route, Link, useSearchParams } from "react-router-dom";
+import type { NavigateOptions } from "@foleon/react-router-dom";
+import { Routes, Route, Link, useSearchParams } from "@foleon/react-router-dom";
 
 export default function App() {
   return (

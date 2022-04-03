@@ -79,14 +79,14 @@ async function run() {
     console.log(`  Publishing version ${version} to npm with tag "${tag}"`);
 
     // 3. Ensure build versions match the release version
-    await ensureBuildVersion("react-router", version);
-    await ensureBuildVersion("react-router-dom", version);
-    await ensureBuildVersion("react-router-native", version);
+    await ensureBuildVersion("@foleon/react-router", version);
+    await ensureBuildVersion("@foleon/react-router-dom", version);
+    await ensureBuildVersion("@foleon/react-router-native", version);
 
     // 4. Publish to npm
-    publishBuild("react-router", tag);
-    publishBuild("react-router-dom", tag);
-    publishBuild("react-router-native", tag);
+    publishBuild("@foleon/react-router", tag);
+    publishBuild("@foleon/react-router-dom", tag);
+    publishBuild("@foleon/react-router-native", tag);
   } catch (error) {
     console.log();
     console.error(`  ${error.message}`);

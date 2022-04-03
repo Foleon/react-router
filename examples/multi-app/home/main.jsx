@@ -1,6 +1,6 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 
 import HomeApp from "./App";
 

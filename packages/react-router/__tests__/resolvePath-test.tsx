@@ -1,4 +1,4 @@
-import { resolvePath } from "react-router";
+import { resolvePath } from "@foleon/react-router";
 
 describe("resolvePath", () => {
   it('resolves absolute paths irrespective of the "from" pathname', () => {

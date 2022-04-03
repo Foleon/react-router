@@ -96,7 +96,7 @@ interface BrowserRouterProps {
 ```tsx
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -132,7 +132,7 @@ interface HashRouterProps {
 ```tsx
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "@foleon/react-router-dom";
 
 ReactDOM.render(
   <HashRouter>
@@ -166,7 +166,7 @@ interface NativeRouterProps extends MemoryRouterProps {}
 
 ```tsx
 import * as React from "react";
-import { NativeRouter } from "react-router-native";
+import { NativeRouter } from "@foleon/react-router-native";
 
 function App() {
   return (
@@ -215,7 +215,7 @@ import {
   MemoryRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 describe("My app", () => {
   it("renders correctly", () => {
@@ -258,7 +258,7 @@ interface HistoryRouterProps {
 ```tsx
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
+import { unstable_HistoryRouter as HistoryRouter } from "@foleon/react-router-dom";
 import { createBrowserHistory } from "history";
 
 const history = createBrowserHistory({ window });
@@ -306,7 +306,7 @@ A `<Link>` is an element that lets the user navigate to another page by clicking
 
 ```tsx
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@foleon/react-router-dom";
 
 function UsersIndexPage({ users }) {
   return (
@@ -362,7 +362,7 @@ A `<Link>` is an element that lets the user navigate to another view by tapping 
 ```tsx
 import * as React from "react";
 import { View, Text } from "react-native";
-import { Link } from "react-router-native";
+import { Link } from "@foleon/react-router-native";
 
 function Home() {
   return (
@@ -415,7 +415,7 @@ By default, an `active` class is added to a `<NavLink>` component when it is act
 
 ```tsx
 import * as React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "@foleon/react-router-dom";
 
 function NavList() {
   // This styling will be applied to a <NavLink> when the
@@ -472,7 +472,7 @@ If you prefer the v5 API, you can create your own `<NavLink />` as a wrapper com
 
 ```tsx
 import * as React from "react";
-import { NavLink as BaseNavLink } from "react-router-dom";
+import { NavLink as BaseNavLink } from "@foleon/react-router-dom";
 
 const NavLink = React.forwardRef(
   ({ activeClassName, activeStyle, ...props }, ref) => {
@@ -533,7 +533,7 @@ A `<Navigate>` element changes the current location when it is rendered. It's a 
 
 ```tsx
 import * as React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate } from "@foleon/react-router-dom";
 
 class LoginForm extends React.Component {
   state = { user: null, error: null };
@@ -638,7 +638,7 @@ function Parent() {
 ```
 
 ```tsx lines=[2]
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext } from "@foleon/react-router-dom";
 
 function Child() {
   const [count, setCount] = useOutletContext();
@@ -652,7 +652,7 @@ If you're using TypeScript, we recommend the parent component provide a custom h
 ```tsx filename=src/routes/dashboard.tsx lines=[12,17-19]
 import * as React from "react";
 import type { User } from "./types";
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Outlet, useOutletContext } from "@foleon/react-router-dom";
 
 type ContextType = { user: User | null };
 
@@ -1024,7 +1024,7 @@ The `useLinkClickHandler` hook returns a click event handler to for navigation w
 import {
   useHref,
   useLinkClickHandler,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 const StyledLink = styled("a", { color: "fuchsia" });
 
@@ -1086,7 +1086,7 @@ The `react-router-native` counterpart to `useLinkClickHandler`, `useLinkPressHan
 
 ```tsx
 import { TouchableHighlight } from "react-native";
-import { useLinkPressHandler } from "react-router-native";
+import { useLinkPressHandler } from "@foleon/react-router-native";
 
 function Link({
   onPress,
@@ -1216,7 +1216,7 @@ interface NavigateFunction {
 The `useNavigate` hook returns a function that lets you navigate programmatically, for example after a form is submitted.
 
 ```tsx
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@foleon/react-router-dom";
 
 function SignupForm() {
   let navigate = useNavigate();
@@ -1323,7 +1323,7 @@ The return value of `useRoutes` is either a valid React element you can use to r
 
 ```tsx
 import * as React from "react";
-import { useRoutes } from "react-router-dom";
+import { useRoutes } from "@foleon/react-router-dom";
 
 function App() {
   let element = useRoutes([
@@ -1380,7 +1380,7 @@ The `useSearchParams` hook is used to read and modify the query string in the UR
 
 ```tsx
 import * as React from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "@foleon/react-router-dom";
 
 function App() {
   let [searchParams, setSearchParams] = useSearchParams();
@@ -1450,7 +1450,7 @@ The `useSearchParams` hook is used to read and modify the query string in the UR
 ```tsx
 import * as React from "react";
 import { View, SearchForm, TextInput } from "react-native";
-import { useSearchParams } from "react-router-native";
+import { useSearchParams } from "@foleon/react-router-native";
 
 function App() {
   let [searchParams, setSearchParams] = useSearchParams();

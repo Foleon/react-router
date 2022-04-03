@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link } from "@foleon/react-router-dom";
 
 export default function Dashboard() {
   // These routes are defined when this component is loaded on demand via

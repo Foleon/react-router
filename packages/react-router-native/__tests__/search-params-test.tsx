@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
   useSearchParams,
-} from "react-router-native";
+} from "@foleon/react-router-native";
 import * as TestRenderer from "react-test-renderer";
 
 describe("useSearchParams", () => {

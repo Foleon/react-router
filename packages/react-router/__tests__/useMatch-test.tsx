@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, PathMatch, Routes, Route, useMatch } from "react-router";
+import { MemoryRouter, PathMatch, Routes, Route, useMatch } from "@foleon/react-router";
 
 function ShowMatch({ pattern }: { pattern: string }) {
   return <pre>{JSON.stringify(useMatch(pattern), null, 2)}</pre>;

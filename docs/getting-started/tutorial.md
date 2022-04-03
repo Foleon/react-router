@@ -96,7 +96,7 @@ First things first, we want to connect your app to the browser's URL: import `Br
 
 ```tsx lines=[2,7-9] filename=src/main.jsx
 import { render } from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
@@ -115,7 +115,7 @@ Nothing changes in your app, but now we're ready to start messing with the URL.
 Open up `src/App.js`, import `Link` and add some global navigation. Side note: don't take the styling too seriously in this tutorial, we're just using inline styles for convenience, style your apps however you want.
 
 ```tsx lines=[1,7-15] filename=src/App.js
-import { Link } from "react-router-dom";
+import { Link } from "@foleon/react-router-dom";
 
 export default function App() {
   return (
@@ -178,7 +178,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import App from "./App";
 import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
@@ -217,7 +217,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import App from "./App";
 import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
@@ -244,7 +244,7 @@ When routes have children it does two things:
 However, before (2) will work we need to render an `Outlet` in the `App.jsx` "parent" route.
 
 ```jsx lines=[1,16] filename=src/App.jsx
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from "@foleon/react-router-dom";
 
 export default function App() {
   return (
@@ -317,7 +317,7 @@ export function getInvoices() {
 Now we can use it in the invoices route. Let's also add a bit of styling to get a sidebar nav layout going on. Feel free to copy/paste all of this, but take special note of the `<Link>` elements `to` prop:
 
 ```js lines=[17] filename=src/routes/invoices.jsx
-import { Link } from "react-router-dom";
+import { Link } from "@foleon/react-router-dom";
 import { getInvoices } from "../data";
 
 export default function Invoices() {
@@ -419,7 +419,7 @@ Alright, now go click a link to an invoice, note that the URL changes but the ne
 That's right! We need to add an outlet to the parent layout route (we're really proud of you).
 
 ```tsx lines=[1,24] filename=src/routes/invoices.jsx
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "@foleon/react-router-dom";
 import { getInvoices } from "../data";
 
 export default function Invoices() {
@@ -451,7 +451,7 @@ export default function Invoices() {
 Okay, let's close the circle here. Open up the invoice component again and let's get the `:invoiceId` param from the URL:
 
 ```ts lines=[1,4] filename=src/routes/invoice.jsx
-import { useParams } from "react-router-dom";
+import { useParams } from "@foleon/react-router-dom";
 
 export default function Invoice() {
   let params = useParams();
@@ -484,7 +484,7 @@ export function getInvoice(number) {
 And now back in `invoice.jsx` we use the param to look up an invoice and display more information:
 
 ```js filename=routes/invoice.jsx lines=[2,6]
-import { useParams } from "react-router-dom";
+import { useParams } from "@foleon/react-router-dom";
 import { getInvoice } from "../data";
 
 export default function Invoice() {
@@ -553,7 +553,7 @@ Maybe you're still scratching your head. There are a few ways we try to answer t
 It's very common, especially in navigation lists, to display the link as the active link the user is looking at. Let's add this treatment to our invoices list by swapping out `Link` for `NavLink`.
 
 ```jsx lines=[1,15-27] filename=src/routes/invoices.jsx
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "@foleon/react-router-dom";
 import { getInvoices } from "../data";
 
 export default function Invoices() {
@@ -617,7 +617,7 @@ import {
   NavLink,
   Outlet,
   useSearchParams,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import { getInvoices } from "../data";
 
 export default function Invoices() {
@@ -684,7 +684,7 @@ If you filter the list and then click a link, you'll notice that the list is no 
 We can persist the query string when we click a link by adding it to the link's href. We'll do that by composing `NavLink` and `useLocation` from React Router into our own `QueryNavLink` (maybe there's a better name, but that's what we're going with today).
 
 ```js
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "@foleon/react-router-dom";
 
 function QueryNavLink({ to, ...props }) {
   let location = useLocation();
@@ -811,7 +811,7 @@ import {
   useParams,
   useNavigate,
   useLocation,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import { getInvoice, deleteInvoice } from "../data";
 
 export default function Invoice() {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link } from "@foleon/react-router-dom";
 
 const About = React.lazy(() => import("./pages/About"));
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));

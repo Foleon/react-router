@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Routes, Route, useHref } from "react-router";
+import { MemoryRouter, Routes, Route, useHref } from "@foleon/react-router";
 
 function ShowHref({ to }: { to: string }) {
   return <p>{useHref(to)}</p>;

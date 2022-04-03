@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, Route, Routes, useSearchParams } from "react-router-dom";
+import { Link, Route, Routes, useSearchParams } from "@foleon/react-router-dom";
 
 export default function App() {
   return (

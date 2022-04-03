@@ -7,7 +7,7 @@ import {
   useLocation,
   useNavigate,
   useParams,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 import { Dialog } from "@reach/dialog";
 import "@reach/dialog/styles.css";
 

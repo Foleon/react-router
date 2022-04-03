@@ -53,7 +53,7 @@ Once your project is set up and React Router is installed as a dependency, open 
 ```js [3, 9-11]
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -70,7 +70,7 @@ Now you can use React Router anywhere in your app! For a simple example, open `s
 
 ```js [2, 8-12]
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "@foleon/react-router-dom";
 import "./App.css";
 
 function App() {
@@ -152,7 +152,7 @@ Go to the `index.js` file in your project and import the necessary functions fro
 // index.js
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 import App from "./App.js";
 
 ReactDOM.render(
@@ -181,7 +181,7 @@ Now that React and React Router are set up create a new file `App.js` and add so
 ```js
 // App.js
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "@foleon/react-router-dom";
 
 function App() {
   return (
@@ -246,7 +246,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 function App() {
   return (

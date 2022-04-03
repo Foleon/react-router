@@ -16,7 +16,7 @@ import {
   useLocation,
   useNavigate,
   useParams,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 function withRouter(Component) {
   function ComponentWithRouterProp(props) {

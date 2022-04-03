@@ -1,5 +1,5 @@
-import type { RouteObject } from "react-router";
-import { matchRoutes } from "react-router";
+import type { RouteObject } from "@foleon/react-router";
+import { matchRoutes } from "@foleon/react-router";
 
 function pickPaths(routes: RouteObject[], pathname: string): string[] | null {
   let matches = matchRoutes(routes, pathname);

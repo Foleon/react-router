@@ -180,7 +180,7 @@ ReactDOM.render(
 );
 
 // React Router v6
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "@foleon/react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -204,7 +204,7 @@ import { Router } from "@reach/router";
 </Router>;
 
 // React Router v6
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "@foleon/react-router-dom";
 
 <Routes>
   <Route path="/" element={<Home />} />
@@ -294,7 +294,7 @@ Alternatively, if you want to allow for outdated links, _and you realize you nee
 
 ```jsx
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@foleon/react-router-dom";
 
 function Redirect({ to }) {
   let navigate = useNavigate();
@@ -343,7 +343,7 @@ function SomeCustomLink() {
 }
 
 // React Router
-import { useLocation, useMatch } from "react-router-dom";
+import { useLocation, useMatch } from "@foleon/react-router-dom";
 
 function SomeCustomLink() {
   let to = "/some/where/cool";

@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Routes, Route, NavLink, Outlet } from "react-router-dom";
+import { MemoryRouter, Routes, Route, NavLink, Outlet } from "@foleon/react-router-dom";
 
 describe("NavLink", () => {
   describe("when it does not match", () => {

@@ -7,7 +7,7 @@ import {
   Routes,
   Route,
   useDeepLinking,
-} from "react-router-native";
+} from "@foleon/react-router-native";
 import { MockEvent, mockPromiseThatResolvesImmediatelyWith } from "./utils";
 
 // Ensures TypeScript understands that Linking is a mock

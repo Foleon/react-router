@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import { MemoryRouter, Routes, Route, Link, Outlet } from "@foleon/react-router-dom";
 
 describe("<Link> href", () => {
   describe("in a static route", () => {

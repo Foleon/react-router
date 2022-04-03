@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as TestRenderer from "react-test-renderer";
-import { MemoryRouter, Routes, Route, useLocation } from "react-router";
+import { MemoryRouter, Routes, Route, useLocation } from "@foleon/react-router";
 
 function ShowPath() {
   let { pathname, search, hash } = useLocation();

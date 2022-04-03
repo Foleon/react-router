@@ -226,7 +226,7 @@ function reactRouterDom() {
         sourcemap: !PRETTY,
         banner: createBanner("React Router DOM", version),
       },
-      external: ["history", "react", "react-dom", "react-router"],
+      external: ["history", "react", "react-dom", "@foleon/react-router"],
       plugins: [
         babel({
           exclude: /node_modules/,
@@ -262,7 +262,7 @@ function reactRouterDom() {
         sourcemap: !PRETTY,
         banner: createBanner("React Router DOM", version),
       },
-      external: ["history", "react", "react-router"],
+      external: ["history", "react", "@foleon/react-router"],
       plugins: [
         babel({
           exclude: /node_modules/,
@@ -288,7 +288,7 @@ function reactRouterDom() {
         sourcemap: !PRETTY,
         banner: createBanner("React Router DOM", version),
       },
-      external: ["history", "react", "react-router"],
+      external: ["history", "react", "@foleon/react-router"],
       plugins: [
         babel({
           exclude: /node_modules/,
@@ -334,11 +334,11 @@ function reactRouterDom() {
         globals: {
           history: "HistoryLibrary",
           react: "React",
-          "react-router": "ReactRouter",
+          "@foleon/react-router": "ReactRouter",
         },
         name: "ReactRouterDOM",
       },
-      external: ["history", "react", "react-router"],
+      external: ["history", "react", "@foleon/react-router"],
       plugins: [
         babel({
           exclude: /node_modules/,
@@ -366,11 +366,11 @@ function reactRouterDom() {
         globals: {
           history: "HistoryLibrary",
           react: "React",
-          "react-router": "ReactRouter",
+          "@foleon/react-router": "ReactRouter",
         },
         name: "ReactRouterDOM",
       },
-      external: ["history", "react", "react-router"],
+      external: ["history", "react", "@foleon/react-router"],
       plugins: [
         babel({
           exclude: /node_modules/,
@@ -414,7 +414,7 @@ function reactRouterDom() {
         "history",
         "react",
         "react-dom/server",
-        "react-router-dom",
+        "@foleon/react-router-dom",
       ],
       plugins: [
         babel({
@@ -441,7 +441,7 @@ function reactRouterDom() {
         "history",
         "react",
         "react-dom/server",
-        "react-router-dom",
+        "@foleon/react-router-dom",
       ],
       plugins: [
         babel({
@@ -489,7 +489,7 @@ function reactRouterNative() {
         "history",
         "react",
         "react-native",
-        "react-router",
+        "@foleon/react-router",
       ],
       plugins: [
         babel({

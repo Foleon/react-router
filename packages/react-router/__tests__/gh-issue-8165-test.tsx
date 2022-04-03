@@ -7,7 +7,7 @@ import {
   useParams,
   useNavigate,
   Navigate,
-} from "react-router-dom";
+} from "@foleon/react-router-dom";
 
 describe("GH Issue #8165", () => {
   it("works", () => {
