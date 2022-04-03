@@ -1379,8 +1379,7 @@ function stripBasename(pathname: string, basename: string): string | null {
 const joinPaths = (paths: string[]): string =>
   paths.join("/").replace(/\/\/+/g, "/");
 
-const normalizePathname = (pathname: string): string =>
-  pathname.replace(/\/+$/, "").replace(/^\/*/, "/");
+const normalizePathname = (pathname: string): string => pathname;
 
 const normalizeSearch = (search: string): string =>
   !search || search === "?"

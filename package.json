@@ -10,7 +10,8 @@
     "size": "filesize",
     "test": "jest",
     "version": "node ./scripts/version.js",
-    "watch": "rollup -c -w"
+    "watch": "rollup -c -w",
+    "preinstall": "npx google-artifactregistry-auth .npmrc"
   },
   "dependencies": {
     "@ampproject/filesize": "^4.3.0",
