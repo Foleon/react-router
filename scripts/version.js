@@ -113,7 +113,7 @@ async function run() {
     ensureCleanWorkingDirectory();
 
     // 1. Get the next version number
-    let currentVersion = await getPackageVersion("@foleon/react-router");
+    let currentVersion = await getPackageVersion("react-router");
     let version = semver.valid(givenVersion);
     if (version == null) {
       version = getNextVersion(currentVersion, givenVersion, prereleaseId);
